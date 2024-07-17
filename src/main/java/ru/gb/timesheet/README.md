@@ -11,7 +11,7 @@
 ### Домашнее задание
 
 
-1. Повторить все, что на семинаре<br><br>
+1. Повторить все, что на семинаре.<br><br>
 2. В объект timesheet в поле createdAt должно подставляться текущее время на стороне сервера!
 Т.е. не клиент присылает, а сервер устанавливает.<br>
 - необходимо, чтобы createdAt устанавливался автоматически на сервере.
@@ -32,7 +32,7 @@
 
 ### Решение
 
-1. В классе Timesheet.javaмммммммммммммм добавляем поле private String projectId вместо private String project и указываем конструктор класса для поля private LocalDate createdAt.
+1. В классе Timesheet.java добавляем поле private String projectId вместо private String project и указываем конструктор класса для поля private LocalDate createdAt.
 2. Добавляем класс проекта Project.java с полями id и name.
 3. Создаем репозиторий, сервис и контроллер для Project анналогично Timesheet в соответствующих директориях.
 4. Обновляем сервис TimesheetService и контроллер TimesheetController для работы существующего проекта с добавленными данными.
@@ -40,12 +40,12 @@
 
 ### Установка Postman
 
-1. Скачать Postman с официального сайта Postman: https://www.postman.com/downloads/ и установить в ПК. Запустить Postman в ПК.<br>
+1. Скачать Postman с официального сайта Postman: https://www.postman.com/downloads/ и установить в ПК. Запустить Postman в ПК.<br><br>
 
-2. После установки открыть приложение Postman и создать новый запрос. Для этого нажать кнопку New в верхнем левом углу и выбрать Request. <br>Можно ввести имя запроса и сохранить его в новой или существующей коллекции.<br>
+2. После установки открыть приложение Postman и создать новый запрос. Для этого нажать кнопку New в верхнем левом углу и выбрать Request. <br>Можно ввести имя запроса и сохранить его в новой или существующей коллекции.<br><br>
 
 3. Настройка запроса<br>
-3.1 Выбрать метод (GET, POST, PUT, DELETE и т.д.). Ввести URL-адрес API, например <br>
+3.1 Выбрать метод (GET, POST, PUT, DELETE и т.д.). Ввести URL-адрес API, <br> например <br>
 http://localhost:8080/timesheets 
 ```
 http://localhost:8080/timesheets 
@@ -58,7 +58,9 @@ http://localhost:8080/projects
 
 ```
 <br>
-3.2 Для POST, PUT запросов перейти на вкладку Body, выбрать raw и формат JSON, затем ввести JSON данные. JSON данных для POST запроса:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.2 Для POST, PUT запросов перейти на вкладку Body, выбрать raw и формат JSON, затем ввести JSON данные.  <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;JSON данных для POST запроса:
+
 ```
 {
     "projectId": "1",
@@ -67,4 +69,5 @@ http://localhost:8080/projects
     "createdAt": "2024-07-04"
 }
 ```
-Нажать кнопку Send и проверить ответ в нижней части окна Postman.<br><br><br>
+ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Нажать кнопку Send и проверить ответ в нижней части окна Postman.<br><br><br>
